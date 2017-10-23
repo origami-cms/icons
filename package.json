@@ -1,8 +1,8 @@
 {
   "name": "origami-icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Icons for snow theme",
-  "main": "index.js",
+  "main": "dist/icons.svg",
   "repository": "https://github.com/origami-cms/icons",
   "author": "Tristan Matthias <hello@tristanmatthias.com>",
   "license": "MIT",
