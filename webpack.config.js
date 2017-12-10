@@ -2,7 +2,7 @@ const path = require('path');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const readFiles = require('recursive-readdir-sync');
 
-const dist = './dist/glow-icons.svg';
+const dist = './dist/icons.svg';
 const icons = readFiles(path.resolve('./icons'));
 
 module.exports = {

@@ -6,6 +6,9 @@
   "repository": "https://github.com/origami-cms/icons",
   "author": "Tristan Matthias <hello@tristanmatthias.com>",
   "license": "MIT",
+  "scripts": {
+      "build": "webpack"
+  },
   "devDependencies": {
     "recursive-readdir-sync": "^1.0.6",
     "svg-sprite-loader": "^3.4.0",
