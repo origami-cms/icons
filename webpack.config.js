@@ -17,7 +17,8 @@ module.exports = {
                 loader: 'svg-sprite-loader',
                 options: {
                     extract: true,
-                    spriteFilename: dist
+                    spriteFilename: dist,
+                    symbolId: 'zen-icon-[name]'
                 }
             }
         ]
