@@ -1,13 +1,13 @@
 {
   "name": "origami-icons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Icons for snow theme",
   "main": "dist/icons.svg",
   "repository": "https://github.com/origami-cms/icons",
   "author": "Tristan Matthias <hello@tristanmatthias.com>",
   "license": "MIT",
   "scripts": {
-      "build": "webpack"
+    "build": "webpack"
   },
   "devDependencies": {
     "recursive-readdir-sync": "^1.0.6",
