@@ -1,6 +1,6 @@
 {
   "name": "origami-icons",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Icons for snow theme",
   "main": "dist/icons.svg",
   "repository": "https://github.com/origami-cms/icons",
