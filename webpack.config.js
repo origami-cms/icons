@@ -2,22 +2,22 @@ const path = require('path');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const readFiles = require('recursive-readdir-sync');
 
-const dist = './dist/icons.svg';
 const icons = readFiles(path.resolve('./icons'));
 
 module.exports = {
     entry: [...icons],
     output: {
-        filename: dist
+        filename: 'icons.svg',
+        path: path.resolve('./')
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /.svg$/,
                 loader: 'svg-sprite-loader',
                 options: {
                     extract: true,
-                    spriteFilename: dist,
+                    spriteFilename: 'icons.svg',
                     symbolId: 'zen-icon-[name]'
                 }
             }

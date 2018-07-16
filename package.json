@@ -8,11 +8,13 @@
   "license": "MIT",
   "typings": "icons.d.ts",
   "scripts": {
-    "build": "webpack"
+    "clean": "rm icons.js; rm icons.svg",
+    "build": "yarn clean; webpack-cli; node compile"
   },
   "devDependencies": {
     "recursive-readdir-sync": "^1.0.6",
-    "svg-sprite-loader": "^3.4.0",
-    "webpack": "^3.8.1"
+    "svg-sprite-loader": "^3.8.0",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
   }
 }
