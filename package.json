@@ -11,13 +11,13 @@
     "clean": "rm icons.js; rm icons.svg",
     "optimize": "svgo --pretty -q icons/",
     "prebuild": "yarn optimize",
-    "build": "yarn clean; webpack-cli; node compile"
+    "build:sprite": "svg-sprite icons/*.svg -D ./ -v  --view-prefix 'zen-icon-' --view-dest '' --vs 'icons.svg' --view-bust false",
+    "build:js": "node compile",
+    "build": "yarn clean; yarn build:sprite; yarn build:js"
   },
   "devDependencies": {
-    "recursive-readdir-sync": "^1.0.6",
     "svg-sprite-loader": "^3.8.0",
     "svgo": "^1.1.1",
-    "webpack": "^4.14.0",
-    "webpack-cli": "^3.0.8"
+    "svg-sprite": "^1.5.0"
   }
 }
